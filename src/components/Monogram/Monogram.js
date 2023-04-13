@@ -1,5 +1,5 @@
 import { forwardRef, useId } from 'react';
-import { classes } from 'utils/style';
+import { classes } from '../../utils/style';
 import styles from './Monogram.module.scss';
 
 export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => {

@@ -1,10 +1,10 @@
-import { Icon } from 'components/Icon';
-import { Loader } from 'components/Loader';
-import { Transition } from 'components/Transition';
+import { Icon } from '../Icon';
+import { Loader } from '../Loader';
+import { Transition } from '../Transition';
 import RouterLink from 'next/link';
 import { forwardRef } from 'react';
-import { classes } from 'utils/style';
-import styles from './Button.module.css';
+import { classes } from '../../utils/style';
+import styles from './Button.module.scss';
 
 function isExternalLink(href) {
   return href?.includes('://');

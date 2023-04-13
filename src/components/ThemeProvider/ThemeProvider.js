@@ -1,14 +1,14 @@
-import SFProItalic from 'assets/fonts/SF-Pro-Display-RegularItalic.woff';
-import SFProRegular from 'assets/fonts/SF-Pro-Display-Regular.woff';
-import SFProSemibold from 'assets/fonts/SF-Pro-Display-Semibold.woff';
-import SFProSemiboldItalic from 'assets/fonts/SF-Pro-Display-SemiboldItalic.woff';
-import SFProMediumItalic from 'assets/fonts/SF-Pro-Display-MediumItalic.woff';
-import SFProMedium from 'assets/fonts/SF-Pro-Display-Medium.woff';
+import SFProItalic from '../../assets/fonts/SF-Pro-Display-RegularItalic.woff';
+import SFProRegular from '../../assets/fonts/SF-Pro-Display-Regular.woff';
+import SFProSemibold from '../../assets/fonts/SF-Pro-Display-Semibold.woff';
+import SFProSemiboldItalic from '../../assets/fonts/SF-Pro-Display-SemiboldItalic.woff';
+import SFProMediumItalic from '../../assets/fonts/SF-Pro-Display-MediumItalic.woff';
+import SFProMedium from '../../assets/fonts/SF-Pro-Display-Medium.woff';
 
-import { useHasMounted } from 'hooks';
+import { useHasMounted } from '../../hooks';
 import Head from 'next/head';
 import { createContext, useEffect } from 'react';
-import { classes, media } from 'utils/style';
+import { classes, media } from '../../utils/style';
 import { theme, tokens } from './theme';
 import { useTheme } from './useTheme';
 

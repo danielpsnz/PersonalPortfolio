@@ -1,13 +1,13 @@
-import { Icon } from 'components/Icon';
-import { Monogram } from 'components/Monogram';
-import { useTheme } from 'components/ThemeProvider';
-import { tokens } from 'components/ThemeProvider/theme';
-import { Transition } from 'components/Transition';
-import { useAppContext, useScrollToHash, useWindowSize } from 'hooks';
+import { Icon } from '../Icon';
+import { Monogram } from '../Monogram';
+import { useTheme } from '../ThemeProvider';
+import { tokens } from '../ThemeProvider/theme';
+import { Transition } from '../Transition';
+import { useAppContext, useScrollToHash, useWindowSize } from '../../hooks';
 import RouterLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
-import { cssProps, media, msToNum, numToMs } from 'utils/style';
+import { cssProps, media, msToNum, numToMs } from '../../utils/style';
 
 import { NavToggle } from './NavToggle';
 import styles from './Navbar.module.scss';
