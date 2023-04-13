@@ -40,6 +40,14 @@
   &[data-mask='true'] {
     fill: white;
   }
+
+  @nest body[data-theme='dark'] & {
+    transform: none;
+
+    @media (--mediaUseMotion) {
+      transition-delay: 0.3s;
+    }
+  }
 }
 
 .mask {
@@ -49,6 +57,14 @@
   @media (--mediaUseMotion) {
     transition: transform var(--durationL) var(--bezierFastoutSlowin);
     transition-delay: 0s;
+  }
+
+  @nest body[data-theme='dark'] & {
+    transform: none;
+
+    @media (--mediaUseMotion) {
+      transition-delay: 0.3s;
+    }
   }
 }
 
@@ -66,5 +82,14 @@
     transition-duration: var(--durationL);
     transition-timing-function: var(--bezierFastoutSlowin);
     transition-delay: 0.3s;
+  }
+
+  @nest body[data-theme='dark'] & {
+    stroke-dashoffset: 7;
+    opacity: 0;
+
+    @media (--mediaUseMotion) {
+      transition-delay: 0s;
+    }
   }
 }

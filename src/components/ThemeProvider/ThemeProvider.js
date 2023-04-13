@@ -1,14 +1,13 @@
-import SFProItalic from '../../assets/fonts/SF-Pro-Display-RegularItalic.woff';
-import SFProRegular from '../../assets/fonts/SF-Pro-Display-Regular.woff';
-import SFProSemibold from '../../assets/fonts/SF-Pro-Display-Semibold.woff';
-import SFProSemiboldItalic from '../../assets/fonts/SF-Pro-Display-SemiboldItalic.woff';
-import SFProMediumItalic from '../../assets/fonts/SF-Pro-Display-MediumItalic.woff';
-import SFProMedium from '../../assets/fonts/SF-Pro-Display-Medium.woff';
-
-import { useHasMounted } from '../../hooks';
+import GothamBoldItalic from 'assets/fonts/gotham-bold-italic.woff2';
+import GothamBold from 'assets/fonts/gotham-bold.woff2';
+import GothamBookItalic from 'assets/fonts/gotham-book-italic.woff2';
+import GothamBook from 'assets/fonts/gotham-book.woff2';
+import GothamMediumItalic from 'assets/fonts/gotham-medium-italic.woff2';
+import GothamMedium from 'assets/fonts/gotham-medium.woff2';
+import { useHasMounted } from 'hooks';
 import Head from 'next/head';
 import { createContext, useEffect } from 'react';
-import { classes, media } from '../../utils/style';
+import { classes, media } from 'utils/style';
 import { theme, tokens } from './theme';
 import { useTheme } from './useTheme';
 
@@ -130,49 +129,49 @@ export const tokenStyles = squish(`
 
 export const fontStyles = squish(`
   @font-face {
-    font-family: SFPro;
+    font-family: Gotham;
     font-weight: 400;
-    src: url(${SFProRegular}) format('woff');
+    src: url(${GothamBook}) format('woff2');
     font-display: block;
     font-style: normal;
   }
 
   @font-face {
-    font-family: SFPro;
+    font-family: Gotham;
     font-weight: 400;
-    src: url(${SFProItalic}) format('woff');
+    src: url(${GothamBookItalic}) format('woff2');
     font-display: block;
     font-style: italic;
   }
 
   @font-face {
-    font-family: SFPro;
+    font-family: Gotham;
     font-weight: 500;
-    src: url(${SFProMedium}) format('woff');
+    src: url(${GothamMedium}) format('woff2');
     font-display: block;
     font-style: normal;
   }
 
   @font-face {
-    font-family: SFPro;
+    font-family: Gotham;
     font-weight: 500;
-    src: url(${SFProMediumItalic}) format('woff');
+    src: url(${GothamMediumItalic}) format('woff2');
     font-display: block;
     font-style: italic;
   }
 
   @font-face {
-    font-family: SFPro;
+    font-family: Gotham;
     font-weight: 700;
-    src: url(${SFProSemibold}) format('woff');
+    src: url(${GothamBold}) format('woff2');
     font-display: block;
     font-style: normal;
   }
 
   @font-face {
-    font-family: SFPro;
+    font-family: Gotham;
     font-weight: 700;
-    src: url(${SFProSemiboldItalic}) format('woff');
+    src: url(${GothamBoldItalic}) format('woff2');
     font-display: block;
     font-style: italic;
   }
