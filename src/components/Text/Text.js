@@ -1,5 +1,5 @@
 import { classes } from 'utils/style';
-import styles from './Text.module.css';
+import styles from './Text.module.scss';
 
 export const Text = ({
     children, 
