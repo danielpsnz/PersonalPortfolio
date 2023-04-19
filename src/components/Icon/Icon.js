@@ -15,6 +15,7 @@ import Pause from './svg/pause.svg';
 import Play from './svg/play.svg';
 import Send from './svg/send.svg';
 import Twitter from './svg/twitter.svg';
+import LinkedIn from './svg/linkedin.svg';
 
 export const icons = {
   arrowLeft: ArrowLeft,
@@ -26,6 +27,7 @@ export const icons = {
   error: Error,
   figma: Figma,
   github: Github,
+  linkedin: LinkedIn,
   link: Link,
   menu: Menu,
   pause: Pause,
